@@ -1,74 +1,70 @@
-# Free API Collection App
+# Getting Started with Create React App
 
-A React-based application designed to help developers discover and explore a variety of free APIs. This repository features an extensive list of APIs with working examples and code snippets to facilitate learning and integration in projects. Whether you’re looking to add functionality, find sample data, or simply explore what’s available, this app is a one-stop solution for API enthusiasts and developers alike.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Browse and Discover**: Find free APIs across various categories such as Data, Weather, Sports, Finance, etc.
-- **Working Examples**: Each API includes a live example so you can see the data in action.
-- **Code Snippets**: Direct, ready-to-use code snippets are provided for each API to simplify integration.
-- **Pagination**: Easy navigation through APIs with pagination support.
-- **Search and Filter**: Search by category or keyword to find APIs tailored to your needs.
+In the project directory, you can run:
 
-## Getting Started
+### `npm start`
 
-### Prerequisites
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Node.js** and **npm** installed on your machine.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Installation
+### `npm test`
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/viki0003/api-application.git
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Usage
+### `npm run build`
 
-- **Browse APIs**: The homepage displays a list of APIs categorized by their purpose.
-- **View Details**: Click on any API to view more details, including a working model and code snippet.
-- **Search and Filter**: Use the search bar to find APIs by category or keyword.
-- **Pagination**: Navigate through pages to explore more APIs.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### API Reference
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**External API Integration**:
-This app fetches data from third-party APIs and displays it dynamically. Each API used in the app has been verified to be publicly available and free for personal use.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**Contributing**:
-We welcome contributions! To ensure a smooth workflow, please follow these rules:
+### `npm run eject`
 
-1. **Fork the Repository**:
-   - Click the "Fork" button in the top-right corner of this repo on GitHub.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. **Get the Latest Changes**:
-   - Before you begin, ensure your local dev branch is up-to-date with the main repository’s dev branch.
-     git checkout dev
-     git pull origin dev
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. **Create a Branch**:
-   - Branch names should follow the format: feature/[your-feature-name] or fix/[your-fix-name]
-git checkout -b feature/your-feature-name
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. **Make Changes and Commit**:
-   - Keep commits focused on specific changes, and use clear, concise commit messages.
-git commit -m "Add: feature description"
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-5. **Push to Your Branch**:
-   - After committing, push the branch to your forked repository.
-git push origin feature/your-feature-name
+## Learn More
 
-6. **Open a Pull Request (PR)**:
-   - Go to the main repository on GitHub and open a Pull Request from your branch to the dev branch.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   - **PR Guidelines**:
-      - Ensure your branch is up-to-date with the latest dev branch before submitting.
-      - Provide a clear title and description for the changes in your PR.
-      - Mention any issues that the PR closes (e.g., "Closes #issue_number").
-      - Wait for approval and address any requested changes before merging.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

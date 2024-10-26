@@ -1,0 +1,188 @@
+header.main-header {
+    background-color: #FBFCFE;
+    color: #131B20;
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-image: none;
+    background-color: #EAF0F5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    left: auto;
+    right: 0;
+    background-color: #0959AA;
+    color: #F0F7FF;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    margin-top: 16px;
+    padding: 0px 16px;
+}
+
+header.main-header .header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+header.main-header .header-elements .app-logo {
+    width: 185px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.app-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header .nav-menu  ul.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .nav-menu ul.navbar-menu li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.43;
+    color: #131B20;
+    cursor: pointer;
+}
+
+.main-app {
+    width: 100%;
+    min-height: 90vh;
+}
+.banner{
+    padding-top: 160px;
+    padding-bottom: 96px;
+}
+.header-elements {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 56px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid;
+    border-color: rgba(191, 204, 217, 0.5);
+    box-shadow: 0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 24);
+}
+
+.portfolio-btn a.MuiButtonBase-root {
+    border-radius: 50px;
+    padding: 12px 20px;
+    background: #0859AA;
+    border: 1px solid #0859AA;
+}
+
+.portfolio-btn a.MuiButtonBase-root:hover {
+    background: #e4ebf4fa;
+    color: #0859AA;
+}
+
+.portfolio-btn .button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: #7808d0;
+    color: #fff !important;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+  
+  .portfolio-btn .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: #7808d0;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .portfolio-btn .button:hover {
+    background-color: #000;
+  }
+  
+  .portfolio-btn .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .portfolio-btn .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .portfolio-btn .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .portfolio-btn .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+
+@media (min-width:1200px) {
+    header.main-header .header-elements {
+        max-width: 1200px;
+    }
+}
