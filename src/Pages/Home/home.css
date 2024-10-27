@@ -1,0 +1,67 @@
+.api-list-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.api-list-blocks .api-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid rgb(208, 213, 221);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.api-list-blocks .api-block .block-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.api-list-blocks .api-block .block-body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(71, 71, 71);
+}
+
+.api-list-blocks .api-block .block-footer span {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(18, 75, 94);
+}
+
+.api-list-blocks .api-block .block-footer a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #474747;
+}
+
+span.svg-block {
+    background: #fff;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #557cf7;
+    animation: spin 12s linear infinite;
+}
+
+span.svg-block svg {
+    max-width: 25px;
+}
+@keyframes spin {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}

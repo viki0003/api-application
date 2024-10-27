@@ -2,6 +2,42 @@ import React from 'react';
 
 const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const maxVisiblePages = 5; // Maximum number of pages to show
+
+    const getPaginationItems = () => {
+        const paginationItems = [];
+
+        if (totalPages <= maxVisiblePages) {
+            // Show all pages if total pages are less than or equal to maxVisiblePages
+            for (let i = 1; i <= totalPages; i++) {
+                paginationItems.push(i);
+            }
+        } else {
+            // Show the first two pages
+            paginationItems.push(1, 2);
+
+            if (currentPage > 3) {
+                paginationItems.push('...'); // Add ellipsis if there are more pages
+            }
+
+            // Calculate start and end range for the current page
+            const startPage = Math.max(3, currentPage - 1);
+            const endPage = Math.min(totalPages - 1, currentPage + 1);
+
+            for (let i = startPage; i <= endPage; i++) {
+                paginationItems.push(i);
+            }
+
+            if (currentPage < totalPages - 2) {
+                paginationItems.push('...'); // Add ellipsis if there are more pages
+            }
+
+            // Show the last two pages
+            paginationItems.push(totalPages - 1, totalPages);
+        }
+
+        return paginationItems;
+    };
 
     return (
         <nav>
@@ -12,11 +48,11 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => 
                 >
                     <button className="page-link">Previous</button>
                 </li>
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                {getPaginationItems().map((page, index) => (
                     <li
-                        key={page}
-                        className={`page-item ${page === currentPage ? 'active' : ''}`}
-                        onClick={() => onPageChange(page)}
+                        key={index}
+                        className={`page-item ${page === currentPage ? 'active' : ''} ${page === '...' ? 'disabled' : ''}`}
+                        onClick={() => page !== '...' && onPageChange(page)}
                     >
                         <button className="page-link">{page}</button>
                     </li>

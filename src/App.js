@@ -1,14 +1,14 @@
 import React from "react";
-import "./App.css";
 import Routing from "./Routes/routes";
-import "../src/Layout/Layout.css"
+import "../src/Layout/Layout.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    
-      <div className="App">
-        <Routing/>
-      </div>
+    <div className="App">
+      <Routing />
+    </div>
   );
 }
 
