@@ -5,6 +5,7 @@ import NewsAPI from "../Pages/NewsAPI/NewsAPI";
 import NewsDetail from "../Pages/NewsAPI/NewsDetail";
 import PokemonAPI from "../Pages/PokemonAPI/PokemonAPI";
 import CryptoAPI from "../Pages/CryptoAPI/CryptoAPI";
+import CatAPI from "../Pages/CatAPI/CatAPI";
 
 const Routing = () => {
   return (
@@ -16,6 +17,7 @@ const Routing = () => {
                    <Route path="/news-api/:id" element={<NewsDetail />} />
                    <Route path="/pokemon-api" element={<PokemonAPI />} />
                    <Route path="/crypto-api" element={<CryptoAPI />} />
+                   <Route path="/cat-api" element={<CatAPI />} />
                    
             </Route>
         </Routes>

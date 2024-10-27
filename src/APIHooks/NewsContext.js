@@ -26,8 +26,10 @@ const NewsProvider = ({ children }) => {
         fetchNews();
     }, []);
 
+    const NewstotalItems = Array.isArray(todayNews) ? todayNews.length : 0;
+
     return (
-        <NewsContext.Provider value={{ todayNews, loading, error }}>
+        <NewsContext.Provider value={{ todayNews, loading, error, NewstotalItems }}>
             {children}
         </NewsContext.Provider>
     );
