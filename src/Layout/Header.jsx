@@ -29,8 +29,8 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className='menu-list'>
-                            <Link to="/weather-api">
-                                Weather API
+                            <Link to="/crypto-api">
+                                Crypto API
                             </Link>
                         </li>
                     </ul>

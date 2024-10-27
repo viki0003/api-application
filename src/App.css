@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .main-app {
   transition: all .8s ease;
 }
@@ -6,7 +6,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Kurale", serif;
+  font-family: "Poppins", sans-serif;
 }
 body{
   color: #131B20;
@@ -14,18 +14,43 @@ body{
   font-size: 15px;
   line-height: 1.5;
   background-color: #f9fafb;
-    background-image: linear-gradient(#e5e7ebd1 1px, #0000 0), linear-gradient(90deg, #e5e7ebd1 1px, #0000 0);
-    background-size: 100px 100px;background-color: #f9fafb;
-    background-image: linear-gradient(#e5e7ebd1 1px, #0000 0), linear-gradient(90deg, #e5e7ebd1 1px, #0000 0);
-    background-size: 50px 50px;
+}
+.home-banner{
+  background-image: url('../public/Code-img.jpg');
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  color: #fff;
+  gap: 20px;
 }
 ul{
   margin: 0px;
   padding: 0px;
   list-style: none;
+  margin-bottom: 0px !important;
 }
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #000;
 }
 .container{
   max-width: 100%;
@@ -41,16 +66,16 @@ a{
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card {
   --main-color: #000;
   --bg-color: #EBD18D;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: calc(300px - 30px);
+  width: calc(25% - 20px);
   padding: 25px;
-  background: var(--bg-color);
+  background: var(--bg-color) !important;
   border-radius: 20px;
 }
 
@@ -220,7 +245,6 @@ ul.pagination li.page-item:first-child button,ul.pagination li.page-item:last-ch
   height: 100%;
   border-radius: 30px;
   animation: moving 1s ease-in-out infinite;
-  ;
 }
 
 @keyframes moving {
@@ -255,6 +279,83 @@ ul.pagination li.page-item:first-child button,ul.pagination li.page-item:last-ch
 }
 
 /*  */
+
+.dc-table {
+  width: 100%;
+  padding: 35px;
+  border-radius: 25px;
+  background: #EBD18D;
+}
+
+.data-card-layout table {
+  width: 100%;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.crypto-logo-ui {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.data-card-layout table thead tr th, .data-card-layout table tbody tr td {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.Btn-Container {
+  display: flex;
+  width: 175px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-Container {
+  width: 45px;
+  height: 45px;
+  background-color: #557cf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transform: rotate(90deg);
+}
+.text {
+  width: calc(180px - 45px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+.icon-Container svg {
+  transition-duration: 1.5s;
+}
+.Btn-Container:hover .icon-Container svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 10px;
+  }
+}
+
 
 @media (min-width:1200px) {
   .container{
