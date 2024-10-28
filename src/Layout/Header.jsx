@@ -33,6 +33,11 @@ const Header = () => {
                                 Crypto API
                             </Link>
                         </li>
+                        <li className='menu-list'>
+                            <Link to="/cat-api">
+                                Cat API
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='portfolio-btn'>
